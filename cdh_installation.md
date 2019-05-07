@@ -1,4 +1,5 @@
-#클라우데라 인스톨 
+# 클라우데라 인스톨
+
 
 ## docker 를 사용해서 필수 요소들만 설치
 [출처] https://hub.docker.com/r/cloudera/clusterdock
@@ -13,19 +14,20 @@
  
  - 클라우데라 매니저 설치 컴포넌트 
  [출처] https://www.cloudera.com/documentation/enterprise/latest/topics/admin_config_services.html
- Managing Services
-   개별 CDH 및 기타 고유 한 요구 사항 또는 옵션이 있는 기타 서비스의 구성 및 관리 
-HBase
-HDFS
-Hive
-Hue
-Impala
-Key-Value Store Indexer
-Kudu
-Solr
-Spark
-Sqoop 1 Client
-Sqoop 2
-YARN (MRv2) and MapReduce (MRv1)
-Managing ZooKeeper
+ 개별 CDH 및 기타 고유 한 요구 사항 또는 옵션이 있는 기타 서비스의 구성 및 관리 
+
+ HBase
+ HDFS
+ Hive
+ Hue
+ Impala
+ Key-Value Store Indexer
+ Kudu
+ Solr
+ Spark
+ Sqoop 1 Client
+ Sqoop 2
+ YARN (MRv2) and MapReduce (MRv1)
+ Managing ZooKeeper
+
 
