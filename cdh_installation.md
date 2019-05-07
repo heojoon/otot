@@ -34,3 +34,16 @@
 
 클러스터독 gitbut
 https://github.com/cloudera/clusterdock
+
+
+- HUE WebUI infomation
+~~~
+http://13.209.82.168:32768
+otot19admin / otot19admin@PW
+~~~
+
+- Cloudera 
+~~~
+http://13.209.82.168:32769/cmf/home
+admin/admin
+~~~
