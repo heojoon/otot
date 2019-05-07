@@ -47,3 +47,8 @@ otot19admin / otot19admin
 http://13.209.82.168:32769/cmf/home
 admin/otot19admin
 ~~~
+
+- official docker container install manual 
+~~~
+https://www.cloudera.com/documentation/enterprise/5-6-x/topics/quickstart_docker_container.html
+~~~
