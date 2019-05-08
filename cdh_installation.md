@@ -1,5 +1,9 @@
-# 클라우데라 인스톨
+# 클라우데라 인스톨 가이드
 
+- 설치 버전 : CDH 5.8 
+- 설치 방법 : docker 
+
+## 클라우데라 docker 버전 설치 개요
 
 ## docker 를 사용해서 필수 요소들만 설치
 [출처] https://hub.docker.com/r/cloudera/clusterdock
@@ -38,17 +42,50 @@ https://github.com/cloudera/clusterdock
 
 - HUE WebUI infomation
 ~~~
-http://13.209.82.168:32768
-otot19admin / otot19admin
+http://{아이피}:32768
 ~~~
 
-- Cloudera 
+- Cloudera Manager
 ~~~
-http://13.209.82.168:32769/cmf/home
-admin/otot19admin
+http://{아이피}:32769
+(초기 로그인 정보 : admin/admin)
 ~~~
 
-- official docker container install manual 
+- official docker container install manual  (참고)
 ~~~
 https://www.cloudera.com/documentation/enterprise/5-6-x/topics/quickstart_docker_container.html
 ~~~
+
+## Quick Start Installation
+
+### Requirements 
+ 1. aws ec2 t2.xlarge 1대
+ 2. centos 7.6
+ 3. docker-ce 1.18
+ 
+### Install Step by Step
+ 1. ec2 생성
+  - OS : centos7 (HVM)
+  - spec : 최소 t2.xlarge 
+ 2. docker-ce 설치
+~~~
+wget https://raw.githubusercontent.com/heojoon/oss/master/install_dockerCE_for_centos.sh
+~~~
+ 3. 클라우데라 docker pull
+~~~
+ docker pull cloudera/clusterdock
+~~~
+ 4. 클라우데라 설치 스크립트 다운로드 및 패스 설정
+~~~
+wget http://tiny.cloudera.com/clusterdock.sh
+source clusterdock.sh
+~~~
+ 5. 클라우데라 기본설치
+~~~
+clusterdock_run ./bin/start_cluster cdh
+~~~
+
+ 
+ 
+
+
