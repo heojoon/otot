@@ -64,10 +64,17 @@ https://www.cloudera.com/documentation/enterprise/5-6-x/topics/quickstart_docker
  3. docker-ce 1.18
  
 ### Install Step by Step
- 1. ec2 생성
+ 1. AWS EC2 생성
   - OS : centos7 (HVM)
   - spec : 최소 t2.xlarge 
- 2. docker-ce 설치
+ 2. ssh 접속
+~~~
+ssh -i {SSHKEY}.pem centos@{AWS-EC2-IP}
+~~~
+** Windows 환경에서 접속시 SSH KEY 퍼미션 에러 문제 해결 **
+
+
+ 3. docker-ce 설치
 ~~~
 wget https://raw.githubusercontent.com/heojoon/oss/master/install_dockerCE_for_centos.sh
 ~~~
@@ -84,7 +91,7 @@ source clusterdock.sh
 ~~~
 clusterdock_run ./bin/start_cluster cdh
 ~~~
-
+ 
  
  
 
