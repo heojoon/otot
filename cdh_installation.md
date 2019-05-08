@@ -72,7 +72,7 @@ https://www.cloudera.com/documentation/enterprise/5-6-x/topics/quickstart_docker
 ssh -i {SSHKEY}.pem centos@{AWS-EC2-IP}
 ~~~
 ** Windows 환경에서 접속시 SSH KEY 퍼미션 에러 문제 해결 **
-
+<img href="https://github.com/heojoon/otot19/blob/master/ssh_key_permission_for_windows.png?raw=true">
 
  3. docker-ce 설치
 ~~~
