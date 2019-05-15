@@ -95,8 +95,16 @@ source clusterdock.sh
 ~~~
 clusterdock_run ./bin/start_cluster cdh
 ~~~
- 
- 
+ 7. 웹 UI 화면 접속
+- HUE WebUI infomation
+~~~
+http://{아이피}:32768
+~~~
+- Cloudera Manager
+~~~
+http://{아이피}:32769
+(초기 로그인 정보 : admin/admin)
+~~~
  
 
 
