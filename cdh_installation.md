@@ -71,7 +71,7 @@ https://www.cloudera.com/documentation/enterprise/5-6-x/topics/quickstart_docker
 ~~~
 ssh -i {SSHKEY}.pem centos@{AWS-EC2-IP}
 ~~~
-** Windows 환경에서 접속시 SSH KEY 퍼미션 에러 문제 해결 **
+ **Windows 환경에서 접속시 SSH KEY 퍼미션 에러 문제 해결**
 <br>
 <img src="https://raw.githubusercontent.com/heojoon/otot19/master/ssh_key_permission_for_windows.png" align="center">
 <br>
@@ -79,16 +79,16 @@ ssh -i {SSHKEY}.pem centos@{AWS-EC2-IP}
 ~~~
 wget https://raw.githubusercontent.com/heojoon/oss/master/install_dockerCE_for_centos.sh
 ~~~
- 3. 클라우데라 docker pull
+ 4. 클라우데라 docker pull
 ~~~
  docker pull cloudera/clusterdock
 ~~~
- 4. 클라우데라 설치 스크립트 다운로드 및 패스 설정
+ 5. 클라우데라 설치 스크립트 다운로드 및 패스 설정
 ~~~
 wget http://tiny.cloudera.com/clusterdock.sh
 source clusterdock.sh
 ~~~
- 5. 클라우데라 기본설치
+ 6. 클라우데라 기본설치
 ~~~
 clusterdock_run ./bin/start_cluster cdh
 ~~~
