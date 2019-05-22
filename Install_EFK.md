@@ -50,4 +50,27 @@ https://hub.docker.com/_/fluentd
 docker pull fluentd:v1.4.2-2.0
 ~~~
 
+6. 이미지 추출
+폐쇄망 서버에 업로드 하기 위해 이미지를 파일로 추출. 
+
+~~~
+# docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+fluentd                    v1.4.2-2.0          a95ac1c3a2a0        11 days ago         40.5MB
+kibana                     6.7.2               2110eecf5f67        3 weeks ago         728MB
+elasticsearch              6.7.2               2982ba071059        3 weeks ago         863MB
+
+# docker save -o fluentd_v1.4.2-2.0.tar fluentd:v1.4.2-2.0
+# docker save -o elasticsearch_6.7.2.tar elasticsearch:6.7.2
+# docker save -o kibana_6.7.2.tar kibana:6.7.2 
+~~~
+
+7. 추출한 이미지를 서버에 업로드
+- *As your knowledge. ;)*
+
+
+
+8. 
+
+
 
