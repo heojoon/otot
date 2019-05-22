@@ -31,6 +31,23 @@ https://www.elastic.co/guide/en/elasticsearch/reference/6.7/docker.html
 docker pull elasticsearch:6.7.2
 ~~~
 
+4. kibana 다운로드
+현재 최신버전이 7.0.1 , 6.7.2 이며 여기서는 6.7.2로 진행한다.
 
+https://hub.docker.com/_/kibana
+https://www.elastic.co/guide/en/kibana/6.7/docker.html
+
+~~~
+docker pull kibana:6.7.2
+~~~
+
+5. Fluentd 다운로드
+latest 버전을 받을 수 있지만 버전 관리를 위하여 다운로드 버전을 명시하여 받는다.
+
+https://hub.docker.com/_/fluentd
+
+~~~
+docker pull fluentd:v1.4.2-2.0
+~~~
 
 
