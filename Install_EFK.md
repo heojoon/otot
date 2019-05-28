@@ -68,9 +68,15 @@ elasticsearch              6.7.2               2982ba071059        3 weeks ago  
 7. 추출한 이미지를 서버에 업로드
 - *As your knowledge. ;)*
 
+8. 업로드한 추출 이미지를 구동할 서버에 배포.
+~~~
+docker load -i elasticsearch_6.7.2.tar
+docker load -i fluentd_v1.4.2-2.0.tar
+docker load -i kibana_6.7.2.tar
 
-
-8. 
+# 정상적 배포 여부 확인
+docker images
+~~~
 
 
 
