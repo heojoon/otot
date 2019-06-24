@@ -16,7 +16,15 @@ quote list // passive Mode 에서 file list 보기
 
 2. 구글링 결과 Winscp 가 있었고 portable이기에 선택하였다.
 
-3. 
+3. 공식 사이트
+https://winscp.net/eng/docs/lang:ko
+
+4. 다운로드 (portable)
+https://winscp.net/download/WinSCP-5.15.2-Portable.zip
+
+5. 스크립트 샘플 사이트
+https://winscp.net/eng/docs/scripts
+
 
  
 
