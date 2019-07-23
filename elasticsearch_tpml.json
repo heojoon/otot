@@ -1,0 +1,82 @@
+# 인덱스 확인
+GET /_cat/indices
+
+# 템플릿 확인
+GET /_cat/templates
+
+# 템플릿 생성
+PUT /_template/forecast_tmpl
+{
+  "order": 2,
+  "version": 60002,
+  "index_patterns": [
+    "forecast-*"
+  ],
+  "settings": {
+    "index.number_of_replicas": "0",
+    "index": {
+      "refresh_interval": "5s"
+    }
+  },
+  "mappings": {
+    "my_type": {
+      "properties": {
+        "start_date": {
+          "type": "date"
+        },
+        "end_date": {
+          "type": "text"
+        },
+        "cpu_min": {
+          "type": "float"
+        },
+        "cpu_avg": {
+          "type": "float"
+        },
+        "cpu_max": {
+          "type": "float"
+        },
+        "execute_count": {
+          "type": "integer"
+        },
+        "logkey": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "mem_avg": {
+          "type": "float"
+        },
+        "mem_max": {
+          "type": "float"
+        },
+        "mem_min": {
+          "type": "float"
+        },
+        "sessions": {
+          "type": "integer"
+        },
+        "sql_execute_elapsed_time": {
+          "type": "integer"
+        },
+        "user_call": {
+          "type": "integer"
+        },
+        "user_commits": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
+
+# 생성 템플릿 확인
+GET /_cat/templates/forecast_tmpl
+GET /_template/forecast_tmpl
+
+# 템플릿 삭제
+DELETE /_template/forecast_tmpl
